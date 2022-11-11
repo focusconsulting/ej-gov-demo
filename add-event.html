@@ -1,3 +1,7 @@
+---
+title: Add an event
+---
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,7 +9,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Justice 40</title>
-        <link rel="stylesheet" href="/assets/css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="{{ site.baseurl }}/assets/css/styles.css"
+        />
     </head>
     <body>
         <a class="usa-skipnav" href="#main-content">Skip to main content</a>
@@ -20,7 +27,7 @@
                             <img
                                 aria-hidden="true"
                                 class="usa-banner__header-flag"
-                                src="/assets/img/us_flag_small.png"
+                                src="{{ site.baseurl }}/assets/img/us_flag_small.png"
                                 alt=""
                             />
                         </div>
@@ -56,7 +63,7 @@
                         <div class="usa-banner__guidance tablet:grid-col-6">
                             <img
                                 class="usa-banner__icon usa-media-block__img"
-                                src="/assets/img/icon-dot-gov.svg"
+                                src="{{ site.baseurl }}/assets/img/icon-dot-gov.svg"
                                 role="img"
                                 alt=""
                                 aria-hidden="true"
@@ -73,7 +80,7 @@
                         <div class="usa-banner__guidance tablet:grid-col-6">
                             <img
                                 class="usa-banner__icon usa-media-block__img"
-                                src="/assets/img/icon-https.svg"
+                                src="{{ site.baseurl }}/assets/img/icon-https.svg"
                                 role="img"
                                 alt=""
                                 aria-hidden="true"
@@ -122,7 +129,7 @@
                 <div class="usa-navbar">
                     <div class="usa-logo" id="-logo">
                         <a href="/" title="Justic 40"
-                            ><img src="/assets/img/logo.jpg"
+                            ><img src="{{ site.baseurl }}/assets/img/logo.jpg"
                         /></a>
                     </div>
                 </div>
@@ -568,6 +575,9 @@
                 </div>
             </section>
         </div>
-        <script defer src="/assets/uswds/js/uswds.js"></script>
+        <script
+            defer
+            src="{{ site.baseurl }}/assets/uswds/js/uswds.js"
+        ></script>
     </body>
 </html>

@@ -1,3 +1,7 @@
+---
+title: Home
+---
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,7 +9,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Justice 40</title>
-        <link rel="stylesheet" href="/assets/css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="{{ site.baseurl }}/assets/css/styles.css"
+        />
     </head>
     <body>
         <a class="usa-skipnav" href="#main-content">Skip to main content</a>
@@ -20,7 +27,7 @@
                             <img
                                 aria-hidden="true"
                                 class="usa-banner__header-flag"
-                                src="/assets/img/us_flag_small.png"
+                                src="{{ site.baseurl }}/assets/img/us_flag_small.png"
                                 alt=""
                             />
                         </div>
@@ -56,7 +63,7 @@
                         <div class="usa-banner__guidance tablet:grid-col-6">
                             <img
                                 class="usa-banner__icon usa-media-block__img"
-                                src="/assets/img/icon-dot-gov.svg"
+                                src="{{ site.baseurl }}/assets/img/icon-dot-gov.svg"
                                 role="img"
                                 alt=""
                                 aria-hidden="true"
@@ -73,7 +80,7 @@
                         <div class="usa-banner__guidance tablet:grid-col-6">
                             <img
                                 class="usa-banner__icon usa-media-block__img"
-                                src="/assets/img/icon-https.svg"
+                                src="{{ site.baseurl }}/assets/img/icon-https.svg"
                                 role="img"
                                 alt=""
                                 aria-hidden="true"
@@ -122,19 +129,21 @@
                 <div class="usa-navbar">
                     <div class="usa-logo" id="-logo">
                         <a href="/" title="Justic 40"
-                            ><img src="/assets/img/logo.jpg"
+                            ><img src="{{ site.baseurl }}/assets/img/logo.jpg"
                         /></a>
                     </div>
                 </div>
                 <nav aria-label="Primary navigation" class="usa-nav">
                     <section>
                         <div style="width: 16rem; text-align: right">
-                            <button
-                                type=""
-                                class="usa-button usa-button--accent-cool margin-bottom-1 text-white"
-                            >
-                                Add an event
-                            </button>
+                            <a href="{{ site.baseurl }}/add-event">
+                                <button
+                                    type="link"
+                                    class="usa-button usa-button--accent-cool margin-bottom-1 text-white"
+                                >
+                                    Add an event
+                                </button>
+                            </a>
                             <div>events can only be added by</div>
                             <div>Federal employees with a .gov email</div>
                         </div>
@@ -309,7 +318,7 @@
                             <div class="mobile-lg:grid-col-auto">
                                 <img
                                     class="usa-footer__logo-img"
-                                    src="/assets/img/logo-img.png"
+                                    src="{{ site.baseurl }}/assets/img/logo-img.png"
                                     alt=""
                                 />
                             </div>
@@ -331,7 +340,7 @@
                                         href="javascript:void(0);"
                                         ><img
                                             class="usa-social-link__icon"
-                                            src="/assets/img/usa-icons/facebook.svg"
+                                            src="{{ site.baseurl }}/assets/img/usa-icons/facebook.svg"
                                             alt="Facebook"
                                     /></a>
                                 </div>
@@ -341,7 +350,7 @@
                                         href="javascript:void(0);"
                                         ><img
                                             class="usa-social-link__icon"
-                                            src="/assets/img/usa-icons/twitter.svg"
+                                            src="{{ site.baseurl }}/assets/img/usa-icons/twitter.svg"
                                             alt="Twitter"
                                     /></a>
                                 </div>
@@ -351,7 +360,7 @@
                                         href="javascript:void(0);"
                                         ><img
                                             class="usa-social-link__icon"
-                                            src="/assets/img/usa-icons/youtube.svg"
+                                            src="{{ site.baseurl }}/assets/img/usa-icons/youtube.svg"
                                             alt="YouTube"
                                     /></a>
                                 </div>
@@ -361,7 +370,7 @@
                                         href="javascript:void(0);"
                                         ><img
                                             class="usa-social-link__icon"
-                                            src="/assets/img/usa-icons/instagram.svg"
+                                            src="{{ site.baseurl }}/assets/img/usa-icons/instagram.svg"
                                             alt="Instagram"
                                     /></a>
                                 </div>
@@ -371,7 +380,7 @@
                                         href="javascript:void(0);"
                                         ><img
                                             class="usa-social-link__icon"
-                                            src="/assets/img/usa-icons/rss_feed.svg"
+                                            src="{{ site.baseurl }}/assets/img/usa-icons/rss_feed.svg"
                                             alt="RSS"
                                     /></a>
                                 </div>
@@ -412,7 +421,7 @@
                             class="usa-identifier__logo"
                             ><img
                                 class="usa-identifier__logo-img"
-                                src="/assets/img/circle-gray-20.svg"
+                                src="{{ site.baseurl }}/assets/img/circle-gray-20.svg"
                                 alt="&lt;Parent agency&gt; logo"
                                 role="img"
                         /></a>
@@ -503,6 +512,9 @@
                 </div>
             </section>
         </div>
-        <script defer src="/assets/uswds/js/uswds.js"></script>
+        <script
+            defer
+            src="{{ site.baseurl }}/assets/uswds/js/uswds.js"
+        ></script>
     </body>
 </html>
