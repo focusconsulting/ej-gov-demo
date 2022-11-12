@@ -574,10 +574,11 @@ layout: base
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(values),
-        }).then((resp) => resp.json())
-        // .then(() => {
-        //     window.location = '/ej-gov-demo/'
-        // })
+        })
+            .then((resp) => resp.json())
+            .then(() => {
+                window.location = '/ej-gov-demo/'
+            })
     }
     const form = document.querySelector('form')
     form.addEventListener('submit', handleSubmit)
