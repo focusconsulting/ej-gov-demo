@@ -1,583 +1,560 @@
 ---
 title: Add an event
+layout: base
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Justice 40</title>
-        <link
-            rel="stylesheet"
-            href="{{ site.baseurl }}/assets/css/styles.css"
-        />
-    </head>
-    <body>
-        <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-        <section
-            class="usa-banner"
-            aria-label="Official website of the United States government"
-        >
-            <div class="usa-accordion">
-                <header class="usa-banner__header">
-                    <div class="usa-banner__inner">
-                        <div class="grid-col-auto">
-                            <img
-                                aria-hidden="true"
-                                class="usa-banner__header-flag"
-                                src="{{ site.baseurl }}/assets/img/us_flag_small.png"
-                                alt=""
-                            />
-                        </div>
-                        <div
-                            class="grid-col-fill tablet:grid-col-auto"
-                            aria-hidden="true"
-                        >
-                            <p class="usa-banner__header-text">
-                                An official website of the United States
-                                government
-                            </p>
-                            <p class="usa-banner__header-action">
-                                Here’s how you know
-                            </p>
-                        </div>
-                        <button
-                            type="button"
-                            class="usa-accordion__button usa-banner__button"
-                            aria-expanded="false"
-                            aria-controls="gov-banner-default"
-                        >
-                            <span class="usa-banner__button-text"
-                                >Here’s how you know</span
-                            >
-                        </button>
-                    </div>
-                </header>
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<section
+    class="usa-banner"
+    aria-label="Official website of the United States government"
+>
+    <div class="usa-accordion">
+        <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+                <div class="grid-col-auto">
+                    <img
+                        aria-hidden="true"
+                        class="usa-banner__header-flag"
+                        src="{{ site.baseurl }}/assets/img/us_flag_small.png"
+                        alt=""
+                    />
+                </div>
                 <div
-                    class="usa-banner__content usa-accordion__content"
-                    id="gov-banner-default"
+                    class="grid-col-fill tablet:grid-col-auto"
+                    aria-hidden="true"
                 >
-                    <div class="grid-row grid-gap-lg">
-                        <div class="usa-banner__guidance tablet:grid-col-6">
-                            <img
-                                class="usa-banner__icon usa-media-block__img"
-                                src="{{ site.baseurl }}/assets/img/icon-dot-gov.svg"
-                                role="img"
-                                alt=""
-                                aria-hidden="true"
-                            />
-                            <div class="usa-media-block__body">
-                                <p>
-                                    <strong>Official websites use .gov</strong
-                                    ><br />A <strong>.gov</strong> website
-                                    belongs to an official government
-                                    organization in the United States.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="usa-banner__guidance tablet:grid-col-6">
-                            <img
-                                class="usa-banner__icon usa-media-block__img"
-                                src="{{ site.baseurl }}/assets/img/icon-https.svg"
-                                role="img"
-                                alt=""
-                                aria-hidden="true"
-                            />
-                            <div class="usa-media-block__body">
-                                <p>
-                                    <strong
-                                        >Secure .gov websites use HTTPS</strong
-                                    ><br />A <strong>lock</strong> (
-                                    <span class="icon-lock"
-                                        ><svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="52"
-                                            height="64"
-                                            viewBox="0 0 52 64"
-                                            class="usa-banner__lock-image"
-                                            role="img"
-                                            aria-labelledby="banner-lock-description"
-                                            focusable="false"
-                                        >
-                                            <title id="banner-lock-title">
-                                                Lock
-                                            </title>
-                                            <desc id="banner-lock-description">
-                                                Locked padlock icon
-                                            </desc>
-                                            <path
-                                                fill="#000000"
-                                                fill-rule="evenodd"
-                                                d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"
-                                            />
-                                        </svg> </span
-                                    >) or <strong>https://</strong> means you’ve
-                                    safely connected to the .gov website. Share
-                                    sensitive information only on official,
-                                    secure websites.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="usa-banner__header-text">
+                        An official website of the United States government
+                    </p>
+                    <p class="usa-banner__header-action">Here’s how you know</p>
                 </div>
-            </div>
-        </section>
-        <header class="usa-header usa-header--basic">
-            <div class="usa-nav-container" style="align-items: center">
-                <div class="usa-navbar">
-                    <div class="usa-logo" id="-logo">
-                        <a href="/" title="Justic 40"
-                            ><img src="{{ site.baseurl }}/assets/img/logo.jpg"
-                        /></a>
-                    </div>
-                </div>
+                <button
+                    type="button"
+                    class="usa-accordion__button usa-banner__button"
+                    aria-expanded="false"
+                    aria-controls="gov-banner-default"
+                >
+                    <span class="usa-banner__button-text"
+                        >Here’s how you know</span
+                    >
+                </button>
             </div>
         </header>
-        <main id="main-content">
-            <section>
-                <div class="grid-container">
-                    <div class="grid-row grid-gap">
-                        <div class="tablet:grid-col-8">
-                            <h1 class="border-bottom padding-bottom-2">
-                                Add an event
-                            </h1>
-                            <form class="usa-form usa-form--large">
-                                <fieldset class="usa-fieldset">
-                                    <label class="usa-label" for="options"
-                                        >Event type</label
-                                    >
-                                    <select
-                                        class="usa-select"
-                                        name="options"
-                                        id="options"
-                                    >
-                                        <option value>- Select -</option>
-                                        <option value="value1">Option A</option>
-                                        <option value="value2">Option B</option>
-                                        <option value="value3">Option C</option>
-                                    </select>
-                                    <label class="usa-label" for="first-name"
-                                        >First name
-                                        <abbr
-                                            title="required"
-                                            class="usa-hint usa-hint--required"
-                                            >*</abbr
-                                        ></label
+        <div
+            class="usa-banner__content usa-accordion__content"
+            id="gov-banner-default"
+        >
+            <div class="grid-row grid-gap-lg">
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img
+                        class="usa-banner__icon usa-media-block__img"
+                        src="{{ site.baseurl }}/assets/img/icon-dot-gov.svg"
+                        role="img"
+                        alt=""
+                        aria-hidden="true"
+                    />
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>Official websites use .gov</strong><br />A
+                            <strong>.gov</strong> website belongs to an official
+                            government organization in the United States.
+                        </p>
+                    </div>
+                </div>
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img
+                        class="usa-banner__icon usa-media-block__img"
+                        src="{{ site.baseurl }}/assets/img/icon-https.svg"
+                        role="img"
+                        alt=""
+                        aria-hidden="true"
+                    />
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>Secure .gov websites use HTTPS</strong
+                            ><br />A <strong>lock</strong> (
+                            <span class="icon-lock"
+                                ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="52"
+                                    height="64"
+                                    viewBox="0 0 52 64"
+                                    class="usa-banner__lock-image"
+                                    role="img"
+                                    aria-labelledby="banner-lock-description"
+                                    focusable="false"
+                                >
+                                    <title id="banner-lock-title">Lock</title>
+                                    <desc id="banner-lock-description">
+                                        Locked padlock icon
+                                    </desc>
+                                    <path
+                                        fill="#000000"
+                                        fill-rule="evenodd"
+                                        d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"
+                                    />
+                                </svg> </span
+                            >) or <strong>https://</strong> means you’ve safely
+                            connected to the .gov website. Share sensitive
+                            information only on official, secure websites.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<header class="usa-header usa-header--basic">
+    <div class="usa-nav-container" style="align-items: center">
+        <div class="usa-navbar">
+            <div class="usa-logo" id="-logo">
+                <a href="/" title="Justic 40"
+                    ><img src="{{ site.baseurl }}/assets/img/logo.jpg"
+                /></a>
+            </div>
+        </div>
+    </div>
+</header>
+<main id="main-content">
+    <section>
+        <div class="grid-container">
+            <div class="grid-row grid-gap">
+                <div class="tablet:grid-col-8">
+                    <h1 class="border-bottom padding-bottom-2">Add an event</h1>
+                    <form
+                        class="usa-form usa-form--large"
+                        action="https://b8gfzt5c.directus.app/items/event"
+                        method="post"
+                        id="event"
+                    >
+                        <fieldset class="usa-fieldset">
+                            <label class="usa-label" for="first-name"
+                                >Event name
+                                <abbr
+                                    title="required"
+                                    class="usa-hint usa-hint--required"
+                                    >*</abbr
+                                ></label
+                            >
+                            <input
+                                class="usa-input usa-input--xl"
+                                id="first-name"
+                                name="event_name"
+                                required
+                                aria-required="true"
+                            />
+                            <label class="usa-label" for="options"
+                                >Event type</label
+                            >
+                            <select
+                                class="usa-select"
+                                name="event_type"
+                                id="event-type"
+                            >
+                                <option value>- Select -</option>
+                                <option value="online">Online</option>
+                                <option value="in-person">In person</option>
+                            </select>
+                            <label class="usa-label" for="first-name"
+                                >First name
+                                <abbr
+                                    title="required"
+                                    class="usa-hint usa-hint--required"
+                                    >*</abbr
+                                ></label
+                            >
+                            <input
+                                class="usa-input usa-input--xl"
+                                id="first-name"
+                                name="created_first_name"
+                                required
+                                aria-required="true"
+                            />
+                            <label class="usa-label" for="last-name"
+                                >Last name
+                                <abbr
+                                    title="required"
+                                    class="usa-hint usa-hint--required"
+                                    >*</abbr
+                                ></label
+                            >
+                            <input
+                                class="usa-input usa-input--xl"
+                                id="last-name"
+                                name="created_last_name"
+                                required
+                                aria-required="true"
+                            />
+                            <label class="usa-label" for="middle-name"
+                                >Email address (.gov only)</label
+                            >
+                            <input
+                                class="usa-input usa-input--xl"
+                                id="email-address"
+                                name="email_address"
+                            />
+                            <div class="grid-row grid-gap">
+                                <div class="mobile-lg:grid-col-7">
+                                    <label class="usa-label" for="job-title"
+                                        >Job title</label
                                     >
                                     <input
-                                        class="usa-input usa-input--xl"
-                                        id="first-name"
-                                        name="first-name"
-                                        required
-                                        aria-required="true"
+                                        class="usa-input"
+                                        id="job-title"
+                                        name="job_title"
                                     />
-                                    <label class="usa-label" for="last-name"
-                                        >Last name
-                                        <abbr
-                                            title="required"
-                                            class="usa-hint usa-hint--required"
-                                            >*</abbr
-                                        ></label
-                                    >
-                                    <input
-                                        class="usa-input usa-input--xl"
-                                        id="last-name"
-                                        name="last-name"
-                                        required
-                                        aria-required="true"
-                                    />
-                                    <label class="usa-label" for="middle-name"
-                                        >Email address (.gov only)</label
-                                    >
-                                    <input
-                                        class="usa-input usa-input--xl"
-                                        id="email-address"
-                                        name="email-address"
-                                    />
-                                    <div class="grid-row grid-gap">
-                                        <div class="mobile-lg:grid-col-7">
-                                            <label
-                                                class="usa-label"
-                                                for="job-title"
-                                                >Job title</label
-                                            >
-                                            <input
-                                                class="usa-input"
-                                                id="job-title"
-                                                name="apt-floor-suite-no"
-                                            />
-                                        </div>
-                                        <div class="mobile-lg:grid-col-5">
-                                            <label
-                                                class="usa-label"
-                                                for="years-in-this-position"
-                                                >Years in this position</label
-                                            >
-                                            <input
-                                                class="usa-input"
-                                                id="years-in-this-position"
-                                                name="years-in-this-position"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div class="usa-form-group">
-                                        <label
-                                            class="usa-label"
-                                            id="appointment-date-label"
-                                            for="appointment-date"
-                                            >Event date</label
-                                        >
-                                        <div
-                                            class="usa-hint"
-                                            id="appointment-date-hint"
-                                        >
-                                            mm/dd/yyyy
-                                        </div>
-                                        <div class="usa-date-picker">
-                                            <input
-                                                class="usa-input"
-                                                id="appointment-date"
-                                                name="appointment-date"
-                                                aria-labelledby="appointment-date-label"
-                                                aria-describedby="appointment-date-hint"
-                                            />
-                                        </div>
-                                    </div>
-                                    <label class="usa-label" for="middle-name">
-                                        <div>
-                                            Event registration/information url
-                                        </div>
-                                        <div class="text-base">http://</div>
-                                    </label>
-                                    <input
-                                        class="usa-input usa-input--xl"
-                                        id="email-address"
-                                        name="email-address"
-                                    />
+                                </div>
+                                <div class="mobile-lg:grid-col-5">
                                     <label
                                         class="usa-label"
-                                        for="event-description"
-                                        >Event description</label
+                                        for="years-in-this-position"
+                                        >Years in this position</label
                                     >
-                                    <textarea
-                                        class="usa-textarea"
-                                        id="event-description"
-                                        name="event-description"
-                                        rows="5"
-                                        aria-describedby="event-description"
-                                    ></textarea>
-                                    <label class="usa-label" for="options"
-                                        >Select your desired attendees</label
-                                    >
-                                    <select
-                                        class="usa-select"
-                                        name="Select your desired attendees"
-                                        id="Select your desired attendees"
-                                    >
-                                        <option value></option>
-                                        <option value="value1">
-                                            Federal program officers
-                                        </option>
-                                        <option value="value2">
-                                            Community members
-                                        </option>
-                                        <option value="value3">
-                                            Potential granttees
-                                        </option>
-                                    </select>
-                                    <fieldset class="usa-fieldset margin-top-5">
-                                        <legend class="usa-legend">
-                                            Will translation services be
-                                            provided?
-                                        </legend>
-                                        <div class="usa-radio">
-                                            <input
-                                                class="usa-radio__input usa-radio__input--tile"
-                                                id="translation-yes"
-                                                type="radio"
-                                                name="translation-yes"
-                                                value="yes"
-                                                checked="checked"
-                                            />
-                                            <label
-                                                class="usa-radio__label"
-                                                for="historical-truth-2"
-                                                >Yes</label
-                                            >
-                                        </div>
-                                        <div class="usa-radio">
-                                            <input
-                                                class="usa-radio__input usa-radio__input--tile"
-                                                id="translation-spanish"
-                                                type="radio"
-                                                name="translation-spanish"
-                                                value="spanish"
-                                                disabled
-                                            />
-                                            <label
-                                                class="usa-radio__label"
-                                                for="historical-douglass-2"
-                                                >Spanish
-                                                <span
-                                                    class="usa-checkbox__label-description"
-                                                    >Translations for materials
-                                                    provided in Spanish</span
-                                                ></label
-                                            >
-                                        </div>
-                                        <div class="usa-radio">
-                                            <input
-                                                class="usa-radio__input usa-radio__input--tile"
-                                                id="translation-sign-language"
-                                                type="radio"
-                                                name="translation-sign-language"
-                                                value="sign-language"
-                                            />
-                                            <label
-                                                class="usa-radio__label"
-                                                for="historical-washington-2"
-                                                >Sign language</label
-                                            >
-                                        </div>
-                                        <div class="usa-radio">
-                                            <input
-                                                class="usa-radio__input usa-radio__input--tile"
-                                                id="translation-no"
-                                                type="radio"
-                                                name="translation-no"
-                                                value="no"
-                                            />
-                                            <label
-                                                class="usa-radio__label"
-                                                for="historical-carver-2"
-                                                >No</label
-                                            >
-                                        </div>
-                                    </fieldset>
                                     <input
-                                        class="usa-button display-block margin-left-auto margin-right-auto"
-                                        type="submit"
-                                        value="Submit"
+                                        class="usa-input"
+                                        id="years-in-this-position"
+                                        name="years_in_this_position"
                                     />
-                                </fieldset>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="usa-footer">
-            <div class="grid-container usa-footer__return-to-top">
-                <a href="#">Return to top</a>
-            </div>
-            <div class="usa-footer__secondary-section">
-                <div class="grid-container">
-                    <div class="grid-row grid-gap">
-                        <div
-                            class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2"
-                        >
-                            <div class="mobile-lg:grid-col-auto">
-                                <img
-                                    class="usa-footer__logo-img"
-                                    src="/assets/img/logo-img.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="mobile-lg:grid-col-auto">
-                                <p class="usa-footer__logo-heading">
-                                    &lt;Name of Agency&gt;
-                                </p>
-                            </div>
-                        </div>
-                        <div
-                            class="usa-footer__contact-links mobile-lg:grid-col-6"
-                        >
-                            <div
-                                class="usa-footer__social-links grid-row grid-gap-1"
-                            >
-                                <div class="grid-col-auto">
-                                    <a
-                                        class="usa-social-link"
-                                        href="javascript:void(0);"
-                                        ><img
-                                            class="usa-social-link__icon"
-                                            src="/assets/img/usa-icons/facebook.svg"
-                                            alt="Facebook"
-                                    /></a>
-                                </div>
-                                <div class="grid-col-auto">
-                                    <a
-                                        class="usa-social-link"
-                                        href="javascript:void(0);"
-                                        ><img
-                                            class="usa-social-link__icon"
-                                            src="/assets/img/usa-icons/twitter.svg"
-                                            alt="Twitter"
-                                    /></a>
-                                </div>
-                                <div class="grid-col-auto">
-                                    <a
-                                        class="usa-social-link"
-                                        href="javascript:void(0);"
-                                        ><img
-                                            class="usa-social-link__icon"
-                                            src="/assets/img/usa-icons/youtube.svg"
-                                            alt="YouTube"
-                                    /></a>
-                                </div>
-                                <div class="grid-col-auto">
-                                    <a
-                                        class="usa-social-link"
-                                        href="javascript:void(0);"
-                                        ><img
-                                            class="usa-social-link__icon"
-                                            src="/assets/img/usa-icons/instagram.svg"
-                                            alt="Instagram"
-                                    /></a>
-                                </div>
-                                <div class="grid-col-auto">
-                                    <a
-                                        class="usa-social-link"
-                                        href="javascript:void(0);"
-                                        ><img
-                                            class="usa-social-link__icon"
-                                            src="/assets/img/usa-icons/rss_feed.svg"
-                                            alt="RSS"
-                                    /></a>
                                 </div>
                             </div>
-                            <p class="usa-footer__contact-heading">
-                                &lt;Agency Contact Center&gt;
-                            </p>
-                            <address class="usa-footer__address">
-                                <div
-                                    class="usa-footer__contact-info grid-row grid-gap"
+                            <div class="usa-form-group">
+                                <label
+                                    class="usa-label"
+                                    id="event-date-label"
+                                    for="event_date"
+                                    >Event date</label
                                 >
-                                    <div class="grid-col-auto">
-                                        <a href="tel:1-800-555-5555"
-                                            >&lt;(800) 555-GOVT&gt;</a
-                                        >
-                                    </div>
-                                    <div class="grid-col-auto">
-                                        <a href="mailto:info@agency.gov"
-                                            >&lt;info@agency.gov&gt;</a
-                                        >
-                                    </div>
+                                <div class="usa-hint" id="event-date-hint">
+                                    mm/dd/yyyy
                                 </div>
-                            </address>
-                        </div>
-                    </div>
+                                <div class="usa-date-picker">
+                                    <input
+                                        class="usa-input"
+                                        id="event-date"
+                                        name="event_date"
+                                        aria-labelledby="event-date-label"
+                                        aria-describedby="event-date-hint"
+                                    />
+                                </div>
+                            </div>
+                            <label class="usa-label" for="middle-name">
+                                <div>Event registration/information url</div>
+                                <div class="text-base">http://</div>
+                            </label>
+                            <input
+                                class="usa-input usa-input--xl"
+                                id="registration-link"
+                                name="registration_link"
+                            />
+                            <label class="usa-label" for="event-description"
+                                >Event description</label
+                            >
+                            <textarea
+                                class="usa-textarea"
+                                id="event-description"
+                                name="event_description"
+                                rows="5"
+                                aria-describedby="event-description"
+                            ></textarea>
+                            <label class="usa-label" for="options"
+                                >Select your desired attendees</label
+                            >
+                            <select
+                                class="usa-select"
+                                name="desired_attendees"
+                                id="Select your desired attendees"
+                            >
+                                <option value></option>
+                                <option value="value1">
+                                    other Federal program officers
+                                </option>
+                                <option value="value2">
+                                    Community members
+                                </option>
+                                <option value="value3">
+                                    Potential grantees
+                                </option>
+                            </select>
+                            <fieldset class="usa-fieldset margin-top-5">
+                                <legend class="usa-legend">
+                                    Will translation services be provided?
+                                </legend>
+                                <div class="usa-radio">
+                                    <input
+                                        class="usa-radio__input usa-radio__input--tile"
+                                        id="translation-yes"
+                                        type="radio"
+                                        name="translation_support"
+                                        value="yes"
+                                        checked="checked"
+                                    />
+                                    <label
+                                        class="usa-radio__label"
+                                        for="translation-yes"
+                                        >Yes</label
+                                    >
+                                </div>
+                                <div class="usa-radio">
+                                    <input
+                                        class="usa-radio__input usa-radio__input--tile"
+                                        id="translation-spanish"
+                                        type="radio"
+                                        name="translation_support"
+                                        value="spanish"
+                                        disabled
+                                    />
+                                    <label
+                                        class="usa-radio__label"
+                                        for="translation-spanish"
+                                        >Spanish
+                                        <span
+                                            class="usa-checkbox__label-description"
+                                            >Translations for materials provided
+                                            in Spanish</span
+                                        ></label
+                                    >
+                                </div>
+                                <div class="usa-radio">
+                                    <input
+                                        class="usa-radio__input usa-radio__input--tile"
+                                        id="translation-sign-language"
+                                        type="radio"
+                                        name="translation_support"
+                                        value="sign-language"
+                                    />
+                                    <label
+                                        class="usa-radio__label"
+                                        for="translation-sign-language"
+                                        >Sign language</label
+                                    >
+                                </div>
+                                <div class="usa-radio">
+                                    <input
+                                        class="usa-radio__input usa-radio__input--tile"
+                                        id="translation-no"
+                                        type="radio"
+                                        name="translation_support"
+                                        value="no"
+                                    />
+                                    <label
+                                        class="usa-radio__label"
+                                        for="translation-no"
+                                        >No</label
+                                    >
+                                </div>
+                            </fieldset>
+                            <input
+                                class="usa-button display-block margin-left-auto margin-right-auto"
+                                type="submit"
+                                value="Submit"
+                            />
+                        </fieldset>
+                    </form>
                 </div>
             </div>
-        </footer>
-        <div class="usa-identifier">
-            <section
-                class="usa-identifier__section usa-identifier__section--masthead"
-                aria-label="Agency identifier"
-            >
-                <div class="usa-identifier__container">
-                    <div class="usa-identifier__logos">
-                        <a
-                            href="javascript:void(0)"
-                            class="usa-identifier__logo"
-                            ><img
-                                class="usa-identifier__logo-img"
-                                src="/assets/img/circle-gray-20.svg"
-                                alt="&lt;Parent agency&gt; logo"
-                                role="img"
-                        /></a>
+        </div>
+    </section>
+</main>
+<footer class="usa-footer">
+    <div class="grid-container usa-footer__return-to-top">
+        <a href="#">Return to top</a>
+    </div>
+    <div class="usa-footer__secondary-section">
+        <div class="grid-container">
+            <div class="grid-row grid-gap">
+                <div
+                    class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2"
+                >
+                    <div class="mobile-lg:grid-col-auto">
+                        <img
+                            class="usa-footer__logo-img"
+                            src="/assets/img/logo-img.png"
+                            alt=""
+                        />
                     </div>
-                    <section
-                        class="usa-identifier__identity"
-                        aria-label="Agency description"
-                    >
-                        <p class="usa-identifier__identity-domain">
-                            domain.gov
+                    <div class="mobile-lg:grid-col-auto">
+                        <p class="usa-footer__logo-heading">
+                            &lt;Name of Agency&gt;
                         </p>
-                        <p class="usa-identifier__identity-disclaimer">
-                            An official website of the
-                            <a href="">&lt;Parent agency&gt;</a>
-                        </p>
-                    </section>
-                </div>
-            </section>
-            <nav
-                class="usa-identifier__section usa-identifier__section--required-links"
-                aria-label="Important links"
-            >
-                <div class="usa-identifier__container">
-                    <ul class="usa-identifier__required-links-list">
-                        <li class="usa-identifier__required-links-item">
-                            <a
-                                href="javascript:void(0)"
-                                class="usa-identifier__required-link usa-link"
-                                >About &lt;Parent shortname&gt;</a
-                            >
-                        </li>
-                        <li class="usa-identifier__required-links-item">
-                            <a
-                                href=""
-                                class="usa-identifier__required-link usa-link"
-                                >Accessibility support</a
-                            >
-                        </li>
-                        <li class="usa-identifier__required-links-item">
-                            <a
-                                href=""
-                                class="usa-identifier__required-link usa-link"
-                                >FOIA requests</a
-                            >
-                        </li>
-                        <li class="usa-identifier__required-links-item">
-                            <a
-                                href=""
-                                class="usa-identifier__required-link usa-link"
-                                >No FEAR Act data</a
-                            >
-                        </li>
-                        <li class="usa-identifier__required-links-item">
-                            <a
-                                href=""
-                                class="usa-identifier__required-link usa-link"
-                                >Office of the Inspector General</a
-                            >
-                        </li>
-                        <li class="usa-identifier__required-links-item">
-                            <a
-                                href=""
-                                class="usa-identifier__required-link usa-link"
-                                >Performance reports</a
-                            >
-                        </li>
-                        <li class="usa-identifier__required-links-item">
-                            <a
-                                href=""
-                                class="usa-identifier__required-link usa-link"
-                                >Privacy policy</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <section
-                class="usa-identifier__section usa-identifier__section--usagov"
-                aria-label="U.S. government information and services"
-            >
-                <div class="usa-identifier__container">
-                    <div class="usa-identifier__usagov-description">
-                        Looking for U.S. government information and services?
                     </div>
-                    <a href="https://www.usa.gov/" class="usa-link"
-                        >Visit USA.gov</a
-                    >
                 </div>
+                <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+                    <div class="usa-footer__social-links grid-row grid-gap-1">
+                        <div class="grid-col-auto">
+                            <a
+                                class="usa-social-link"
+                                href="javascript:void(0);"
+                                ><img
+                                    class="usa-social-link__icon"
+                                    src="/assets/img/usa-icons/facebook.svg"
+                                    alt="Facebook"
+                            /></a>
+                        </div>
+                        <div class="grid-col-auto">
+                            <a
+                                class="usa-social-link"
+                                href="javascript:void(0);"
+                                ><img
+                                    class="usa-social-link__icon"
+                                    src="/assets/img/usa-icons/twitter.svg"
+                                    alt="Twitter"
+                            /></a>
+                        </div>
+                        <div class="grid-col-auto">
+                            <a
+                                class="usa-social-link"
+                                href="javascript:void(0);"
+                                ><img
+                                    class="usa-social-link__icon"
+                                    src="/assets/img/usa-icons/youtube.svg"
+                                    alt="YouTube"
+                            /></a>
+                        </div>
+                        <div class="grid-col-auto">
+                            <a
+                                class="usa-social-link"
+                                href="javascript:void(0);"
+                                ><img
+                                    class="usa-social-link__icon"
+                                    src="/assets/img/usa-icons/instagram.svg"
+                                    alt="Instagram"
+                            /></a>
+                        </div>
+                        <div class="grid-col-auto">
+                            <a
+                                class="usa-social-link"
+                                href="javascript:void(0);"
+                                ><img
+                                    class="usa-social-link__icon"
+                                    src="/assets/img/usa-icons/rss_feed.svg"
+                                    alt="RSS"
+                            /></a>
+                        </div>
+                    </div>
+                    <p class="usa-footer__contact-heading">
+                        &lt;Agency Contact Center&gt;
+                    </p>
+                    <address class="usa-footer__address">
+                        <div class="usa-footer__contact-info grid-row grid-gap">
+                            <div class="grid-col-auto">
+                                <a href="tel:1-800-555-5555"
+                                    >&lt;(800) 555-GOVT&gt;</a
+                                >
+                            </div>
+                            <div class="grid-col-auto">
+                                <a href="mailto:info@agency.gov"
+                                    >&lt;info@agency.gov&gt;</a
+                                >
+                            </div>
+                        </div>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="usa-identifier">
+    <section
+        class="usa-identifier__section usa-identifier__section--masthead"
+        aria-label="Agency identifier"
+    >
+        <div class="usa-identifier__container">
+            <div class="usa-identifier__logos">
+                <a href="javascript:void(0)" class="usa-identifier__logo"
+                    ><img
+                        class="usa-identifier__logo-img"
+                        src="/assets/img/circle-gray-20.svg"
+                        alt="&lt;Parent agency&gt; logo"
+                        role="img"
+                /></a>
+            </div>
+            <section
+                class="usa-identifier__identity"
+                aria-label="Agency description"
+            >
+                <p class="usa-identifier__identity-domain">domain.gov</p>
+                <p class="usa-identifier__identity-disclaimer">
+                    An official website of the
+                    <a href="">&lt;Parent agency&gt;</a>
+                </p>
             </section>
         </div>
-        <script
-            defer
-            src="{{ site.baseurl }}/assets/uswds/js/uswds.js"
-        ></script>
-    </body>
-</html>
+    </section>
+    <nav
+        class="usa-identifier__section usa-identifier__section--required-links"
+        aria-label="Important links"
+    >
+        <div class="usa-identifier__container">
+            <ul class="usa-identifier__required-links-list">
+                <li class="usa-identifier__required-links-item">
+                    <a
+                        href="javascript:void(0)"
+                        class="usa-identifier__required-link usa-link"
+                        >About &lt;Parent shortname&gt;</a
+                    >
+                </li>
+                <li class="usa-identifier__required-links-item">
+                    <a href="" class="usa-identifier__required-link usa-link"
+                        >Accessibility support</a
+                    >
+                </li>
+                <li class="usa-identifier__required-links-item">
+                    <a href="" class="usa-identifier__required-link usa-link"
+                        >FOIA requests</a
+                    >
+                </li>
+                <li class="usa-identifier__required-links-item">
+                    <a href="" class="usa-identifier__required-link usa-link"
+                        >No FEAR Act data</a
+                    >
+                </li>
+                <li class="usa-identifier__required-links-item">
+                    <a href="" class="usa-identifier__required-link usa-link"
+                        >Office of the Inspector General</a
+                    >
+                </li>
+                <li class="usa-identifier__required-links-item">
+                    <a href="" class="usa-identifier__required-link usa-link"
+                        >Performance reports</a
+                    >
+                </li>
+                <li class="usa-identifier__required-links-item">
+                    <a href="" class="usa-identifier__required-link usa-link"
+                        >Privacy policy</a
+                    >
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section
+        class="usa-identifier__section usa-identifier__section--usagov"
+        aria-label="U.S. government information and services"
+    >
+        <div class="usa-identifier__container">
+            <div class="usa-identifier__usagov-description">
+                Looking for U.S. government information and services?
+            </div>
+            <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
+        </div>
+    </section>
+</div>
+<script defer>
+    function handleSubmit(event) {
+        event.preventDefault()
+        const data = new FormData(event.target)
+        const values = Object.fromEntries(data.entries())
+        fetch('https://b8gfzt5c.directus.app/items/event', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(values),
+        })
+            .then((resp) => resp.json())
+            .then(() => {
+                window.location = '/ej-gov-demo/'
+            })
+    }
+    const form = document.querySelector('form')
+    form.addEventListener('submit', handleSubmit)
+</script>
