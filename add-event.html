@@ -144,12 +144,19 @@ layout: base
                                 aria-required="true"
                             />
                             <label class="usa-label" for="options"
-                                >Event type</label
+                                >Event type
+                                <abbr
+                                    title="required"
+                                    class="usa-hint usa-hint--required"
+                                    >*</abbr
+                                ></label
                             >
                             <select
                                 class="usa-select"
                                 name="event_type"
                                 id="event-type"
+                                required
+                                aria-required="true"
                             >
                                 <option value>- Select -</option>
                                 <option value="online">Online</option>
@@ -157,33 +164,19 @@ layout: base
                             </select>
                             <label class="usa-label" for="first-name"
                                 >First name
-                                <abbr
-                                    title="required"
-                                    class="usa-hint usa-hint--required"
-                                    >*</abbr
-                                ></label
-                            >
+                            </label>
                             <input
                                 class="usa-input usa-input--xl"
                                 id="first-name"
                                 name="created_first_name"
-                                required
-                                aria-required="true"
                             />
                             <label class="usa-label" for="last-name"
                                 >Last name
-                                <abbr
-                                    title="required"
-                                    class="usa-hint usa-hint--required"
-                                    >*</abbr
-                                ></label
-                            >
+                            </label>
                             <input
                                 class="usa-input usa-input--xl"
                                 id="last-name"
                                 name="created_last_name"
-                                required
-                                aria-required="true"
                             />
                             <label class="usa-label" for="middle-name"
                                 >Email address (.gov only)</label
@@ -222,7 +215,12 @@ layout: base
                                     class="usa-label"
                                     id="event-date-label"
                                     for="event_date"
-                                    >Event date</label
+                                    >Event date
+                                    <abbr
+                                        title="required"
+                                        class="usa-hint usa-hint--required"
+                                        >*</abbr
+                                    ></label
                                 >
                                 <div class="usa-hint" id="event-date-hint">
                                     mm/dd/yyyy
@@ -234,20 +232,36 @@ layout: base
                                         name="event_date"
                                         aria-labelledby="event-date-label"
                                         aria-describedby="event-date-hint"
+                                        required
+                                        aria-required="true"
                                     />
                                 </div>
                             </div>
                             <label class="usa-label" for="middle-name">
-                                <div>Event registration/information url</div>
+                                <div>
+                                    Event registration/information url
+                                    <abbr
+                                        title="required"
+                                        class="usa-hint usa-hint--required"
+                                        >*</abbr
+                                    >
+                                </div>
                                 <div class="text-base">http://</div>
                             </label>
                             <input
                                 class="usa-input usa-input--xl"
                                 id="registration-link"
                                 name="registration_link"
+                                required
+                                aria-required="true"
                             />
                             <label class="usa-label" for="event-description"
-                                >Event description</label
+                                >Event description
+                                <abbr
+                                    title="required"
+                                    class="usa-hint usa-hint--required"
+                                    >*</abbr
+                                ></label
                             >
                             <textarea
                                 class="usa-textarea"
@@ -255,23 +269,32 @@ layout: base
                                 name="event_description"
                                 rows="5"
                                 aria-describedby="event-description"
+                                required
+                                aria-required="true"
                             ></textarea>
                             <label class="usa-label" for="options"
-                                >Select your desired attendees</label
+                                >Select your desired attendees
+                                <abbr
+                                    title="required"
+                                    class="usa-hint usa-hint--required"
+                                    >*</abbr
+                                ></label
                             >
                             <select
                                 class="usa-select"
                                 name="desired_attendees"
                                 id="Select your desired attendees"
+                                required
+                                aria-required="true"
                             >
                                 <option value></option>
-                                <option value="value1">
+                                <option value="other Federal program officers">
                                     other Federal program officers
                                 </option>
-                                <option value="value2">
+                                <option value="Community members">
                                     Community members
                                 </option>
-                                <option value="value3">
+                                <option value="Potential grantees">
                                     Potential grantees
                                 </option>
                             </select>
@@ -368,7 +391,7 @@ layout: base
                     <div class="mobile-lg:grid-col-auto">
                         <img
                             class="usa-footer__logo-img"
-                            src="/assets/img/logo-img.png"
+                            src="/ej-gov-demo/assets/img/logo-img.png"
                             alt=""
                         />
                     </div>
@@ -386,7 +409,7 @@ layout: base
                                 href="javascript:void(0);"
                                 ><img
                                     class="usa-social-link__icon"
-                                    src="/assets/img/usa-icons/facebook.svg"
+                                    src="/ej-gov-demo/assets/img/usa-icons/facebook.svg"
                                     alt="Facebook"
                             /></a>
                         </div>
@@ -396,7 +419,7 @@ layout: base
                                 href="javascript:void(0);"
                                 ><img
                                     class="usa-social-link__icon"
-                                    src="/assets/img/usa-icons/twitter.svg"
+                                    src="/ej-gov-demo/assets/img/usa-icons/twitter.svg"
                                     alt="Twitter"
                             /></a>
                         </div>
@@ -406,7 +429,7 @@ layout: base
                                 href="javascript:void(0);"
                                 ><img
                                     class="usa-social-link__icon"
-                                    src="/assets/img/usa-icons/youtube.svg"
+                                    src="/ej-gov-demo/assets/img/usa-icons/youtube.svg"
                                     alt="YouTube"
                             /></a>
                         </div>
@@ -416,7 +439,7 @@ layout: base
                                 href="javascript:void(0);"
                                 ><img
                                     class="usa-social-link__icon"
-                                    src="/assets/img/usa-icons/instagram.svg"
+                                    src="/ej-gov-demo/assets/img/usa-icons/instagram.svg"
                                     alt="Instagram"
                             /></a>
                         </div>
@@ -426,7 +449,7 @@ layout: base
                                 href="javascript:void(0);"
                                 ><img
                                     class="usa-social-link__icon"
-                                    src="/assets/img/usa-icons/rss_feed.svg"
+                                    src="/ej-gov-demo/assets/img/usa-icons/rss_feed.svg"
                                     alt="RSS"
                             /></a>
                         </div>
@@ -463,7 +486,7 @@ layout: base
                 <a href="javascript:void(0)" class="usa-identifier__logo"
                     ><img
                         class="usa-identifier__logo-img"
-                        src="/assets/img/circle-gray-20.svg"
+                        src="/ej-gov-demo/assets/img/circle-gray-20.svg"
                         alt="&lt;Parent agency&gt; logo"
                         role="img"
                 /></a>
@@ -543,6 +566,10 @@ layout: base
         event.preventDefault()
         const data = new FormData(event.target)
         const values = Object.fromEntries(data.entries())
+        const eventDate = new Date(values.event_date)
+        values.event_date = `${eventDate.getFullYear()}-${
+            eventDate.getMonth() + 1
+        }-${eventDate.getDate()}`
         fetch('https://b8gfzt5c.directus.app/items/event', {
             method: 'POST',
             headers: {

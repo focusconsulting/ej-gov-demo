@@ -157,89 +157,10 @@ title: Home
             <div class="grid-row grid-gap">
                 <div class="tablet:grid-col-8">
                     <h3 class="site-preview-heading">Find an event</h3>
-                    <ul class="usa-collection" id="events-collection">
-                        <li class="usa-collection__item">
-                            <div class="usa-collection__calendar-date">
-                                <time datetime="2020-09-30T12:00:00+01:00"
-                                    ><span
-                                        class="usa-collection__calendar-date-month"
-                                        >SEP</span
-                                    >
-                                    <span
-                                        class="usa-collection__calendar-date-day"
-                                        >26</span
-                                    ></time
-                                >
-                                <div
-                                    class="margin-top-1"
-                                    style="
-                                        width: fit-content;
-                                        margin-left: auto;
-                                        margin-right: auto;
-                                    "
-                                >
-                                    <span class="usa-tag bg-base-darkest"
-                                        >New</span
-                                    >
-                                </div>
-                            </div>
-                            <div class="usa-collection__body">
-                                <h3 class="usa-collection__heading">
-                                    <a class="usa-link" href="#"
-                                        >EPA's bi-weekly Tribal Nation
-                                        engagement sessions</a
-                                    >
-                                </h3>
-                                <div class="margin-top-05">
-                                    <span class="usa-tag bg-base-darkest"
-                                        >tribal nation</span
-                                    >
-                                    <span class="usa-tag bg-base-darkest"
-                                        >engagement</span
-                                    >
-                                    <span class="usa-tag bg-base-darkest"
-                                        >webinar</span
-                                    >
-                                </div>
-                                <p class="usa-collection__description">
-                                    Today, the Administration announces the
-                                    winners of the Gears of Government
-                                    President’s Award. This program recognizes
-                                    the contributions of individuals and teams
-                                    across the federal workforce who make a
-                                    profound difference in the lives of the
-                                    American people.
-                                </p>
-                                <p>
-                                    <span class="text-bold"
-                                        >Who should attend:</span
-                                    >
-                                    Community Members, Potential granttees,
-                                    other Federal program officers
-                                </p>
-                                <p>
-                                    <span class="text-bold">Event type:</span>
-                                    Online (recorded and distributed post
-                                    session)
-                                </p>
-                                <p>
-                                    <span class="text-bold"
-                                        >Registration link:</span
-                                    >
-                                    <a href="http://www.epa.gov/register"
-                                        >http://www.epa.gov/register</a
-                                    >
-                                </p>
-                                <p>
-                                    <span class="text-bold"
-                                        >Translation support:</span
-                                    >
-                                    Offered in English with Spanish translation
-                                    support for all materials and discussions
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
+                    <div id="loading-indicator">
+                        Loading event information...
+                    </div>
+                    <ul class="usa-collection" id="events-collection"></ul>
                 </div>
                 <div class="tablet:grid-col-4">
                     <div class="usa-form-group">
@@ -530,9 +451,10 @@ title: Home
     }
     const pastMonth = new Date()
     pastMonth.setMonth(pastMonth.getMonth() - 1)
-    fetch('https://b8gfzt5c.directus.app/items/event')
+    fetch('https://b8gfzt5c.directus.app/items/event?sort=-event_date')
         .then((resp) => resp.json())
         .then((resp) => {
+            document.querySelector('#loading-indicator').remove()
             const events = resp.data
             events
                 .filter((event) => event.status === 'published')
