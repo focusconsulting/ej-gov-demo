@@ -567,20 +567,17 @@ layout: base
         const data = new FormData(event.target)
         const values = Object.fromEntries(data.entries())
         const eventDate = new Date(values.event_date)
-        values.event_date = `${eventDate.getFullYear()}-${
-            eventDate.getMonth() + 1
-        }-${eventDate.getDate()}`
+        values.event_date = eventDate.toISOString().split('T')[0]
         fetch('https://b8gfzt5c.directus.app/items/event', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(values),
-        })
-            .then((resp) => resp.json())
-            .then(() => {
-                window.location = '/ej-gov-demo/'
-            })
+        }).then((resp) => resp.json())
+        // .then(() => {
+        //     window.location = '/ej-gov-demo/'
+        // })
     }
     const form = document.querySelector('form')
     form.addEventListener('submit', handleSubmit)
