@@ -459,7 +459,12 @@ title: Home
             events
                 .filter((event) => event.status === 'published')
                 .forEach((event) => {
-                    const eventDate = new Date(event.event_date)
+                    const eventDateParts = event.event_date.split('-')
+                    const eventDate = new Date(
+                        eventDateParts[0],
+                        eventDateParts[1] - 1,
+                        eventDateParts[2]
+                    )
                     const isNew = pastMonth - eventDate < 0
                     const eventElement = template.content.cloneNode(true)
                     if (!isNew) {
@@ -467,7 +472,7 @@ title: Home
                             'none'
                     }
                     eventElement.querySelector('.event_day').textContent =
-                        eventDate.getDate()
+                        eventDate.toLocaleString('default', { day: 'numeric' })
                     eventElement.querySelector('.event_month').textContent =
                         eventDate
                             .toLocaleString('default', { month: 'short' })
