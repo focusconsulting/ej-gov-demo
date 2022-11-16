@@ -108,8 +108,10 @@ title: Home
     <div class="usa-nav-container" style="align-items: center">
         <div class="usa-navbar">
             <div class="usa-logo" id="-logo">
-                <a href="/" title="Justic 40"
-                    ><img src="{{ site.baseurl }}/assets/img/logo.jpg"
+                <a href="{{site.baseurl}}/" title="Justic 40"
+                    ><img
+                        src="{{ site.baseurl }}/assets/img/logo.jpg"
+                        style="height: 3rem"
                 /></a>
             </div>
         </div>
@@ -162,7 +164,7 @@ title: Home
                     </div>
                     <ul class="usa-collection" id="events-collection"></ul>
                 </div>
-                <div class="tablet:grid-col-4">
+                <div class="tablet:grid-col-4 order-first desktop:order-last">
                     <div class="usa-form-group">
                         <label
                             class="usa-label"
