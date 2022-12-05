@@ -1,6 +1,6 @@
 # Focus Consulting environmentaljustice.gov Demo
 
-The demo can be viewed here: http://focusconsulting.io/ej-gov-demo/
+The demo can be viewed here: https://focusconsulting.github.io/ej-gov-demo/
 
 This repository contains the demo code for the environmentaljustice.gov site. It consists of a simple site generated via Jekyll and styled with components from USWDS. The content is powered by a headless CMS; content can be added via the site and as well as through the admin pages of the CMS. Additionally, other fields like tags and files can be added via the admin pages.
 
